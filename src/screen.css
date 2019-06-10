@@ -1,0 +1,122 @@
+:root {
+	box-sizing: border-box;
+	font-size: 100%;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+html {
+    background-color: rgb(238, 165, 208);
+    font-family: Dosis;
+    font-style: normal;
+    font-weight: bold;
+}
+
+body {
+	background-color: rgba(255, 255, 255, 0.068);
+	font: 100%/1.5 sans-serif;
+}
+
+.app {
+	display: grid;
+	grid-column-gap: 2rem;
+	grid-template-columns: 18.75rem auto;
+	margin: 0 auto;
+	max-width: 56.25rem;
+	width: 90%;
+	background-color: rgba(238, 165, 207, 0.308)
+}
+
+.app>*:first-child,
+.app>*:last-child {
+	border: 5px solid black;
+}
+
+.BoredHeader {
+    margin: 2rem 2rem 2rem 2rem;
+    padding: 1rem;
+    color: rgba(255, 255, 255, 0.836);
+    width: 100%;
+    box-shadow: 10px 10px 0px #ffffff; 
+} 
+
+.SubHeader {
+    margin: 2rem 2rem 2rem 2rem;
+    padding: 1rem;
+    background-color: black;
+    color: white;
+    width: 26%;
+    text-align: center;
+    font-size: 1.5em;
+    box-shadow: 10px 10px 0px #ffffff; 
+}
+
+.signs {
+	height: 90vh;
+	line-height: 1.2;
+	list-style: none;
+	margin: 0;
+	overflow-y: scroll;
+	padding: 1rem;
+}
+
+.signs li {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 0 0 2rem;
+	padding: 0;
+}
+
+.signs li.inactive {
+	opacity: .3;
+}
+
+.signs img {
+	margin-bottom: 1rem;
+	max-height: 6.5rem;
+	max-width: 6.5rem;
+}
+
+.signs h2 {
+	margin: 0 0 1rem;
+	text-transform: uppercase;
+}
+
+.signs p {
+	margin: 0;
+	text-align: center;
+}
+
+.admin {
+	height: 90vh;
+	overflow-y: scroll;
+	padding: 1rem;
+}
+
+.sign-edit {
+	border: 1px solid #111;
+	margin-bottom: 1rem;
+}
+
+.controlgroup {
+	display: flex;
+	flex-direction: column;
+	padding: 1rem;
+}
+
+label {
+	color: darkgray;
+	font-size: 80%;
+}
+
+input[type="text"],
+select,
+textarea {
+	padding: .5rem;
+}
