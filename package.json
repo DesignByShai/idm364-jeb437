@@ -5,12 +5,15 @@
   "homepage": "https://DesignByShai.github.io/idm364-jeb437",
   "dependencies": {
     "firebase": "^6.1.1",
+    "gh-pages": "^2.0.1",
     "re-base": "^4.0.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "BROWSER='Google Chrome' react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
